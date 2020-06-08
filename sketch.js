@@ -65,9 +65,6 @@ class System {
 
         for(var i=0; i<N; i++) {
             const angle = i * 2.0 * PI / N;
-            const x = cos(angle) * radius_x + center_x;
-            const y = sin(angle) * radius_y + center_y;
-
             const target_x = cos(PI*(0.5 + this.steps*0.01 + sin(0.001*this.steps)) + angle) * radius_x + center_x;
             const target_y = sin(PI*(0.5 + this.steps*0.01 + sin(0.001*this.steps)) + angle) * radius_y + center_y;
 
